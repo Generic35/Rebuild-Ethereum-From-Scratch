@@ -137,3 +137,4 @@ class Interpreter {
 
 Interpreter.OPCODE_MAP = OPCODE_MAP;
 module.exports = Interpreter;
+
