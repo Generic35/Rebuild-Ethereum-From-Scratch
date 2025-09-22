@@ -1,1 +1,9 @@
-// add Blockchain class here
+const Block = require('./block');
+
+class Blockchain {
+  constructor() {
+    this.chain = [Block.genesis()];
+  }
+}
+
+module.exports = Blockchain;

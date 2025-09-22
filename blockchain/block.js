@@ -1,1 +1,13 @@
-// add Block class here
+const { GENESIS_DATA } = require('../config');
+
+class Block {
+  constructor({ blockHeaders }) {
+    this.blockHeaders = blockHeaders;
+  }
+
+  static genesis() {
+    return new Block(GENESIS_DATA);
+  }
+}
+
+module.exports = Block;
